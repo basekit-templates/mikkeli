@@ -1,0 +1,27 @@
+<!-- Footer Include !-->
+<footer class="template-footer">
+
+	<div class="wrapper clearfix">
+	        <div class="responsivecolumns columns-three-50-25-25">
+	            <div class="column columns-three-left">
+	                {{widget('companyname', 'footer-companyname', {"business": "profile"})|raw}}
+	            </div>
+
+	            <div class="column columns-three-right">
+	               {{widget('profile', 'footercolumn2', { 'profileType':'address', 'address':'profile', 'refreshtime':'1800000'})|raw}}
+	            </div>
+
+	            <div class="column columns-three-right">
+	                {{widget('profile', 'footercolumn3', { 'profileType':'phone', 'phone':'profile', 'refreshtime':'1800000'})|raw}}
+	            </div>
+	        </div>
+	        <div class="copyright-container">
+	        	{{widget('profile', 'copyright', { 'profileType':'copyright', 'copyright':'profile', 'refreshtime':'1800000'})|raw}}
+
+	        </div>
+	    </div>
+
+</footer>
+
+
+
