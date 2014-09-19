@@ -680,6 +680,10 @@
 		color: @font-swatch4-color;
 	}
 
+    .ecom-product-info {
+        padding-bottom: 25px;
+    }
+
 
 	// Product Preview
 
@@ -771,8 +775,6 @@
 
 	.ecom-product-category {
 		position: relative;
-		bottom: -10px;
-		line-height: 22px;
 	}
 
 	.ecom-product-cattag {
@@ -782,12 +784,9 @@
 
 	// Category Separation
 
-	.ecom-product-tag-link:after {
+	.ecom-product-tag-link:first-child:before, .store-category-link:first-child:before {
 		content: ',';
-	}
-
-	.ecom-product-tag-link:last-child:after {
-		display: none;
+        color: @color-swatch5;
 	}
 
 	// Product Description
