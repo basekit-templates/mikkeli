@@ -124,20 +124,78 @@ blockquote p {
 
 		// Slider title and description styles
 
+
 		.content-wrapper {
 			background: fade(@color-swatch5, 15%);
-			position: absolute;
 			width: 100%;
 			height: 100%;
 			text-align: center;
 
-			span.title,
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-direction: normal;
+			-moz-box-direction: normal;
+			-webkit-box-orient: vertical;
+			-moz-box-orient: vertical;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-flex-wrap: nowrap;
+			-ms-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+			-webkit-box-pack: center;
+			-moz-box-pack: center;
+			-webkit-justify-content: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			-webkit-align-content: center;
+			-ms-flex-line-pack: center;
+			align-content: center;
+			-webkit-box-align: center;
+			-moz-box-align: center;
+			-webkit-align-items: center;
+			-ms-flex-align: center;
+			align-items: center;
+
+
+
+			span.title {
+				display: inherit;
+
+				 -webkit-box-ordinal-group: 1;
+			    -moz-box-ordinal-group: 1;
+			    -webkit-order: 0;
+			    -ms-flex-order: 0;
+			    order: 0;
+			    -webkit-box-flex: 0;
+			    -moz-box-flex: 0;
+			    -webkit-flex: 0 1 auto;
+			    -ms-flex: 0 1 auto;
+			    flex: 0 1 auto;
+			    -webkit-align-self: auto;
+			    -ms-flex-item-align: auto;
+			    align-self: auto;
+			}
+
 			span.description {
-				display: block;
-				position: relative;
-				margin: 0 auto;
-				top: 45%;
-				width: 80%;
+				display: inherit;
+
+				-webkit-box-ordinal-group: 1;
+			    -moz-box-ordinal-group: 1;
+			    -webkit-order: 0;
+			    -ms-flex-order: 0;
+			    order: 0;
+			    -webkit-box-flex: 0;
+			    -moz-box-flex: 0;
+			    -webkit-flex: 0 1 auto;
+			    -ms-flex: 0 1 auto;
+			    flex: 0 1 auto;
+			    -webkit-align-self: auto;
+			    -ms-flex-item-align: auto;
+			    align-self: auto;
 			}
 
 			span.title {
@@ -165,6 +223,51 @@ blockquote p {
 				}
 			}
 		}
+
+		// .content-wrapper {
+		// 	background: fade(@color-swatch5, 15%);
+		// 	position: absolute;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	text-align: center;
+
+		// 	span.title,
+		// 	span.description {
+		// 		display: block;
+		// 		position: relative;
+		// 		margin: 0 auto;
+		// 		top: 45%;
+		// 		width: 80%;
+		// 		@media @mobile {
+		// 			top: 20%;
+		// 		}
+		// 	}
+
+		// 	span.title {
+		// 		font-family: @font-swatch8-font-family;
+		// 		font-size: @font-swatch8-font-size;
+		// 		color: @font-swatch8-color;
+		// 		font-weight: @font-swatch8-font-weight;
+		// 		line-height: @font-swatch8-line-height;
+		// 		@media @mobile {
+		// 			font-size: bkscale(@font-swatch8-font-size, 0.75);
+		// 			line-height: bkscale(@font-swatch8-line-height, 0.85);
+		// 		}
+		// 	}
+		// 	span.description {
+		// 		font-family: @font-swatch9-font-family;
+		// 		font-size: @font-swatch4-font-size;
+		// 		color: @font-swatch9-color;
+		// 		font-weight: @font-swatch9-font-weight;
+		// 		margin-top: 6px;
+		// 		line-height: @font-swatch9-line-height;
+		// 		@media @mobile {
+		// 			font-size: bkscale(@font-swatch9-font-size, 0.75);
+		// 			line-height: bkscale(@font-swatch9-line-height, 0.85);
+		// 			margin-top: 0;
+		// 		}
+		// 	}
+		// }
 
 
 		// Controls
