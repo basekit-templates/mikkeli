@@ -394,8 +394,11 @@ blockquote p {
 	&.stuckMenu.isStuck {
 		width: 100%;
 		z-index: 9999;
-		max-height: 100vh;
-		overflow-y: auto;
+
+		@media @tablet {
+			max-height: 100vh;
+			overflow-y: auto;
+		}
 	}
 
 }
