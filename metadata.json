@@ -1,7 +1,7 @@
 {
 	"name":"Mikkeli",
 	"thumbnail":"mikkeli.png",
-	"screenshot":"mikkeli.png",
+	"screenshot":"mikkeli-screenshot.jpg",
     "tags": { "en": ["business", "clean", "corporate"] },
     "pageTypes":["home"],
     "templateType":"standard",
