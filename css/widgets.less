@@ -66,7 +66,8 @@ textarea,
 .signupform,
 .canvas .widget.profile form,
 .bottom-profile .widget.profile form,
-.delivery {
+.delivery
+.advancedcontactform {
 	padding: 30px 30px 50px;
 	margin: 0 0 20px;
 	border: 1px solid @color-swatch2;
@@ -116,6 +117,33 @@ textarea,
 	}
 }
 
+// Advanced Contact Form
+.advancedcontactform {
+    .label {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .input {
+        width: 100%;
+    }
+    .form-group {
+        margin-bottom: 10px;
+    }
+    select {
+        margin-top: 10px;
+        background-position-x: 99%;
+    }
+    .select-wrap {
+    	display: inline-block;
+    }
+    .label--select {
+    	display: block;
+    }
+}
+
+
+
+
 // -----------------------------
 // #Buttons
 // -----------------------------
@@ -143,7 +171,8 @@ button.btn,
 .blog-post-more-link a,
 .ecombasket-checkout-link,
 .widget.ecomcheckout .checkout-order-button,
-.blog-list-footer a {
+.blog-list-footer a,
+.advancedcontactform button {
 	padding: 12px 25px;
 	background-color: @color-swatch3;
 	border: none;
