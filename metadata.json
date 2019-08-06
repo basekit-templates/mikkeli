@@ -1,5 +1,6 @@
 {
 	"name":"Mikkeli",
+	"versionTenCompatible": 1,
 	"thumbnail":"mikkeli.png",
 	"screenshot":"mikkeli-screenshot.jpg",
     "tags": { "en": ["business", "clean", "corporate"] },
