@@ -6,40 +6,39 @@
 #migrated-site {
 
 
-// Stylseheet overrides
+// Stylesheet overrides
 // -----------------------------
 
 
-// Template wrapper (replace with corresponding template classes)
-.main.wrapper {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
+.template-header {
+  margin-bottom: 0;
 }
 
-// Main content spacing (replace with corresponding template class)
-.main {
-  padding: 0;
-}
 
-// Widget overflow to allow 10S overlays to display correctly
-.widget.content {
-  overflow: inherit;
-}
+.edit .template-header.stuckMenu.isStuck {
+  left: 100px;
+  right: 100px;
+  width: ~"calc(100% - 200px)";
 
-.wrapper:before {
-    display:none;
-}
 
-#page-zones__main #page-zones__main-widgets__blogpostlist {
-    margin-bottom: 30px;
-}
-
-.wrapper #migrated-site #page-zones__main > .widget:not(.row) {
-    margin-left: 0;
-    margin-right: 0;
+  // Editor breakpoint
+  @media only screen and (max-width: 930px) {
+    left: 0;
+    right: 0;
     width: 100%;
+  }
 }
+
+
+// Template wrapper (replace with corresponding template classes)
+.template-header + .wrapper {
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+
+
 
 // Migration styles
 // -----------------------------
@@ -58,9 +57,10 @@
 #page-zones__main:empty,
 #page-zones__main > .widget:not(.row),
 .row:not(.widget):not(.row--width-no-padding) .row__container {
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 100%;
+  width: 90%;
 }
 
 
@@ -114,8 +114,8 @@
 }
 
 .edit .stuckMenu.isStuck {
-    left:100px;
-    right:100px;
+    left: 100px;
+    right: 100px;
     width: auto;
 }
 
