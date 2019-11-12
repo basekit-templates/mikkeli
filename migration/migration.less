@@ -105,11 +105,10 @@
 
 // Adds spacing to the section when a widget is before it
 #page-zones__main > .widget:not(.row) + .row {
-  margin-bottom: @spacing--other;
   margin-top: @spacing--other;
 
-  &:not(:last-child) {
-       margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
